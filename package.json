@@ -1,0 +1,74 @@
+{
+	"name": "qualificame-native",
+	"main": "node_modules/expo/AppEntry.js",
+	"scripts": {
+		"start": "expo start",
+		"android": "expo start --android",
+		"ios": "expo start --ios",
+		"eject": "expo eject",
+		"test": "node_modules/.bin/jest",
+		"test:watch": "node_modules/.bin/jest --watch",
+		"test:coverage": "node_modules/.bin/jest --coverage"
+	},
+	"jest": {
+		"preset": "jest-expo",
+		"setupFilesAfterEnv": [
+			"<rootDir>config/setupTests.js"
+		],
+		"snapshotSerializers": [
+			"enzyme-to-json/serializer"
+		]
+	},
+	"dependencies": {
+		"@react-native-community/datetimepicker": "3.5.2",
+		"@react-native-community/masked-view": "0.1.10",
+		"axios": "^0.21.1",
+		"expo": "^42.0.0",
+		"expo-app-loading": "^1.0.1",
+		"expo-asset": "~8.3.3",
+		"expo-barcode-scanner": "~10.2.2",
+		"expo-cli": "^4.5.2",
+		"expo-constants": "~11.0.1",
+		"expo-font": "~9.2.1",
+		"expo-linear-gradient": "~9.2.0",
+		"expo-localization": "~10.2.0",
+		"expo-notifications": "~0.12.3",
+		"expo-permissions": "~12.1.1",
+		"global": "^4.3.2",
+		"moment": "^2.24.0",
+		"prop-types": "^15.7.2",
+		"react": "16.13.1",
+		"react-dom": "16.13.1",
+		"react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
+		"react-native-actionsheet": "^2.4.2",
+		"react-native-awesome-alerts": "^1.4.2",
+		"react-native-dotenv": "^0.2.0",
+		"react-native-gesture-handler": "~1.10.2",
+		"react-native-keyboard-spacer": "^0.4.1",
+		"react-native-modal-datetime-picker": "^9.0.0",
+		"react-native-reanimated": "~2.2.0",
+		"react-native-safe-area-context": "3.2.0",
+		"react-native-screens": "~3.4.0",
+		"react-native-svg": "12.1.1",
+		"react-navigation": "^4.4.2",
+		"react-navigation-stack": "^2.8.4",
+		"react-navigation-tabs": "^2.9.2",
+		"react-query-hooks": "^0.0.4",
+		"react-redux": "^7.1.0",
+		"redux": "^4.0.1",
+		"redux-persist": "^5.10.0",
+		"redux-thunk": "^2.3.0",
+		"victory-native": "^32.0.2"
+	},
+	"devDependencies": {
+		"babel-preset-expo": "8.3.0",
+		"enzyme": "^3.9.0",
+		"enzyme-adapter-react-16": "^1.12.1",
+		"enzyme-to-json": "^3.3.5",
+		"jest": "^24.8.0",
+		"jest-expo": "^42.0.0",
+		"reactotron-react-native": "^3.5.0",
+		"reactotron-redux": "^3.1.0"
+	},
+	"private": true
+}
